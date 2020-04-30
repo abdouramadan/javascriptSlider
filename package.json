@@ -1,0 +1,12 @@
+{
+  "name": "Template",
+  "version": "1.0.0",
+  "description": "Ready Template boiler plate",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch sass/style.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "Abdou Ramadan",
+  "license": "ISC"
+}

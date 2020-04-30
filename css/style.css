@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500|Muli|Poppins:400,600|Roboto&display=swap");
+/*------------main fonts--------------*/
+/*------------ reset--------------*/
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli";
+}
+
+.main__header {
+  min-height: 100vh;
+}
+.main__header .slider-container {
+  margin: 10px auto;
+  position: relative;
+  width: 800px;
+  height: 450px;
+}
+.main__header .slider-container img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+}
+.main__header .slider-container img.active {
+  opacity: 1;
+}
+.main__header .slider-container .slide-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 6px;
+  z-index: 2;
+}
+.main__header .slider-controls {
+  width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+.main__header .slider-controls .prev,
+.main__header .slider-controls .next {
+  background-color: #009688;
+  color: #FFF;
+  font-size: 16px;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px;
+  user-select: none;
+  width: 20%;
+}
+.main__header .slider-controls .prev.disabled,
+.main__header .slider-controls .next.disabled {
+  background-color: rgba(0, 150, 136, 0.5);
+  cursor: no-drop;
+}
+.main__header .slider-controls .indicators {
+  width: 60%;
+  float: left;
+}
+.main__header .slider-controls .indicators ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+.main__header .slider-controls .indicators ul li {
+  display: inline-block;
+  background: #f6f6f6;
+  color: #333;
+  font-weight: bold;
+  height: 28px;
+  width: 28px;
+  border-radius: 4px;
+  margin: 0 2px;
+  line-height: 28px;
+  cursor: pointer;
+}
+.main__header .slider-controls .indicators ul li.active {
+  background-color: #009688;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=style.css.map */
